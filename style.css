@@ -1,0 +1,334 @@
+                       
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#651FFF;
+    --secondary-color:#5C5F6E;
+}
+a{
+     text-decoration: none;
+   
+}
+h1,h2{
+    font-weight: 700;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+.my-h2{
+    font-weight: bold;
+    font-size: medium;
+}
+.my-better-h6{
+    font-weight: 700;
+    font-size: medium;
+}
+p{
+ color: var(--secondary-color);
+
+}
+
+.my-white-p{
+    color: #fff;
+}
+a:hover{
+    cursor: pointer;
+    box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-out;
+}
+li{
+    list-style-type: none;
+}
+
+.my-text-primary{
+    color: var(--primary-color);
+}
+.my-dot-color{
+    color: #000;
+}
+.header-wrapper,
+.hero,
+.lightning,
+.team,
+.better,
+.simple,
+.ready,
+.works{
+    padding: 20px 0;
+}
+.header-wrapper{
+    background-color: #ffff;
+
+}
+.header-wrapper a:first-child,
+.hero .container a:last-child,
+.team a:last-child
+{
+    border: 2px solid #0B0D0E;
+    border-radius: 10px;
+    color: #000;
+    padding: 10px;
+ 
+}
+.header-wrapper .col-md-6:last-child a:nth-child(2),
+.hero .container a:first-child,
+.team  a:first-child,
+.simple .get,
+.ready .create
+ {
+    background-color: var(--primary-color) ;
+    padding: 7px;
+    border-radius: 10px;
+    color: #ffff;
+    
+}
+/* section2 hero  */
+.hero{
+    background-color: #EBE5FA;
+}
+
+/* <!-- section3 - lightning --> */
+
+.lightning .container:last-child >div> div>div>div{
+    background-color: var(--primary-color);
+    padding: 20px 20px;
+    height: 100%;
+    border-radius: 10px;
+}
+.lightning .container:last-child >div> div>div>div p{
+    color: #ffff;
+}
+.lightning .container:last-child >div> div>div>div h2{
+    color: #fff;
+}
+.images{
+    background-color: #ffff;
+    padding: 7px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+
+/*     <!-- team productivity --> */
+
+.team >.container>div:nth-child(2)>div:nth-child(1){
+    background-color: #FFF7ED;
+     padding: 15px 15px;
+    height: 100%;
+    border-radius: 20px;
+}
+.team >.container>div:nth-child(2)>div:nth-child(2){
+    background-color: #E0F7FA;
+      padding: 15px 15px;
+    height: 100%;
+    border-radius: 20px;
+}
+.team >.container>div:last-child{
+    background-color: #ECECFE;
+     padding: 15px 15px;
+    height: 100%;
+    border-radius: 20px;
+    margin: 1rem 0 1rem 0 !important;
+
+}
+
+@media (max-width:768px){
+    .team-images{
+        width: 50%;
+    }
+    .team >.container>div:nth-child(2)>div:nth-child(1),
+    .team >.container>div:nth-child(2)>div:nth-child(2),
+    .team >.container>div:last-child{
+        margin: 0 1rem 0 0;
+    }
+}
+
+
+/* <!-- better --> */
+
+.better .col-12.col-md-6{
+ padding: 18px 20px;
+
+    max-width: 600px;
+}
+
+.better .images{
+    background-color: #ECECFE;
+    padding: 7px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.better .impact-div{
+    background-image: url(./img/better/impact-bg.png)  ;
+    
+
+}
+.better .upgrade p{
+    max-width: 700px;
+}
+.learn{
+    color: #00E5FF;
+    font-size: medium;
+}
+.environment{
+    color: #34D399;
+    font-size: medium;
+}
+@media (max-width:768px){
+    .better .col-12.col-md-6{
+    padding: 10px 30px;
+    max-width: 600px;
+}
+
+}
+
+@media(max-width:420px){
+    .storage{
+        display: flex;
+        flex-direction: column;
+    }
+       
+}
+
+
+/*     <!-- Simple. Fair pricing. --> */
+.simple{
+      background: linear-gradient(to bottom, #00E5FF 70%, #ffffff 30%);
+}
+
+.simple h2{
+    color: #ffff;
+}
+.simple .container>div:first-child >p{
+    color: #fff;
+}
+.simple .amount{
+    color: #000;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.simple .amount1{
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+}
+.simple .container>div:last-child>div:first-child{
+    background-color: #FFFFFF;
+    padding: 10px 60px;
+    border-radius: 15px;
+}
+.simple .container>div:last-child>div:last-child{
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+.simple .inbound,.outbound{
+    background-color: #ffff;
+    padding: 2px 7px;
+    border-radius: 20px;
+    
+}
+.simple.inbound{
+    color: var(--primary-color);
+}
+.simple  .outbound{
+    color: #22D3EE;
+}
+hr{
+    border: 1px dashed #000;
+}
+@media (max-width:768px) {
+    .simple .container>div:last-child>div:first-child,
+    .simple .container>div:last-child>div:last-child{
+   
+    padding: 10px 20px;
+ 
+    margin: 0 1rem ;
+}
+}
+
+@media(max-width:420px){
+  
+        .simple .container>div:last-child>div:first-child, .simple .container>div:last-child>div:last-child {
+        padding: 10px 2px;
+        margin: 0 0.5rem;
+    }
+}
+
+/*     <!-- Ready to get started? --> */
+
+.ready .container>div:last-child>div:first-child{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.ready .container>div:last-child>div:first-child p,h2{
+    color: #fff;
+}
+
+.ready .container>div:last-child>div:last-child{
+    background-color: #ECECFE;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.ready .container>div:last-child>div:last-child p,h2{
+    color: var(--primary-color);
+}
+
+.ready .container>div:last-child>div:last-child .images{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+@media(max-width:768px){
+  
+   .ready .container>div:last-child>div:first-child{
+   
+    padding: 10px 10px;
+    border-radius: 10px;
+     margin: 0 1rem;
+}
+.ready .container>div:last-child>div:last-child{
+ 
+    padding: 10px 10px;
+    border-radius: 10px;
+     margin: 0 1rem;
+}
+.ready .images1{
+    width: 50%;
+}
+}
+
+@media(max-width:420px){
+  
+   .ready .container>div:last-child>div:first-child{
+   
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+.ready .container>div:last-child>div:last-child{
+ 
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+}
+
+
+/* footer */
+footer{
+    background-color: #1A284E;
+    color: #ffff;
+    padding: 20px 0;
+}
+footer h2, footer p{
+    color: #ffff;
+    font-size:small;
+}
